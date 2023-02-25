@@ -15,7 +15,7 @@ function none(a, b) {
 };
 
 function one(a, b) {
-  // your code here
+  return (a || b) && !(a && b);
 };
 
 function truthiness(a) {
