@@ -43,7 +43,9 @@ function isEven(a) {
 };
 
 function isSquare(a) {
-  // your code here
+  const squareRoot = Math.sqrt(a);
+  const isPerfectSquare = Math.ceil(squareRoot) === Math.floor(squareRoot);
+  return isPerfectSquare;
 };
 
 function startsWith(char, string) {
