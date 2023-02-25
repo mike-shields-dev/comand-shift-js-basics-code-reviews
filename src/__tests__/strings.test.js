@@ -38,7 +38,7 @@ describe('lowercase', () => {
 });
 
 describe('countCharacters', () => {
-  xit('returns the number of characters in the string', () => {
+  it('returns the number of characters in the string', () => {
     expect(countCharacters('fsfsgsfdg')).toEqual(9);
     expect(countCharacters('fsfsg')).toEqual(5);
     expect(countCharacters('')).toEqual(0);

@@ -11,7 +11,7 @@ function lowercase (string) {
 };
 
 function countCharacters (string) {
-  
+  return string.length;
 };
 
 function firstCharacter (string) {
