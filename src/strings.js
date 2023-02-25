@@ -3,15 +3,15 @@ function sayHello (string) {
 };
 
 function uppercase (string) {
-  return 'Hello, ' + string + '!';
+  return string.toUpperCase();
 };
 
 function lowercase (string) {
-  return 'Hello, ' + string + '!';
+  return string.toLowerCase();
 };
 
 function countCharacters (string) {
-  // your code here
+  
 };
 
 function firstCharacter (string) {
