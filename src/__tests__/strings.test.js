@@ -54,11 +54,11 @@ describe('firstCharacter', () => {
 });
 
 describe('firstCharacters', () => {
-  xit('returns the first 4 characters of the string', () => {
+  it('returns the first 4 characters of the string', () => {
     expect(firstCharacters('sd32fg45', 4)).toEqual('sd32');
   });
 
-  xit('returns the first 2 characters of the string', () => {
+  it('returns the first 2 characters of the string', () => {
     expect(firstCharacters('asd', 2)).toEqual('as');
   });
 });
