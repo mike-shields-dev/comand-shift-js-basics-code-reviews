@@ -46,7 +46,7 @@ describe('countCharacters', () => {
 });
 
 describe('firstCharacter', () => {
-  xit('returns the first character of the string', () => {
+  it('returns the first character of the string', () => {
     expect(firstCharacter('ABC')).toEqual('A');
     expect(firstCharacter('DEF')).toEqual('D');
     expect(firstCharacter('GHI')).toEqual('G');
