@@ -7,7 +7,7 @@ function uppercase (string) {
 };
 
 function lowercase (string) {
-  // your code here
+  return 'Hello, ' + string + '!';
 };
 
 function countCharacters (string) {
