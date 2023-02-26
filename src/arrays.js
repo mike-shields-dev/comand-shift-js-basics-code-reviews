@@ -21,7 +21,8 @@ const addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(index, 1);
+  return array;
 };
 
 const numbersToStrings = numbers => {
