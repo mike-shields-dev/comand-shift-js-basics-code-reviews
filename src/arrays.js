@@ -1,5 +1,5 @@
 const getNthElement = (index, array) => {
-  index = index % array.length;
+  index %= array.length;
   return array[index];
 };
 

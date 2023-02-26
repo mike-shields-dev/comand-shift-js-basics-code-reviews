@@ -76,7 +76,7 @@ describe('removeNthElement', () => {
     const array = ['ant', 'bison', 'cockerel', 'duck', 'elephant'];
     removeNthElement(2, array);
     expect(array).toEqual(['ant', 'bison', 'duck', 'elephant']);
-    
+
     const arrayTwo = ['thing 1', 'thing 2', 'thing 3', 'thing 4', 'thing 5'];
     removeNthElement(0, arrayTwo);
     expect(arrayTwo).toEqual(['thing 2', 'thing 3', 'thing 4', 'thing 5']);
