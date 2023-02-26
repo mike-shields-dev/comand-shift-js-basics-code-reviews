@@ -27,7 +27,6 @@ const removeNthElement = (index, array) => {
 
 const numbersToStrings = numbers => {
   return numbers.map(String);
-  // alternative: return numbers.join().split(',');
 };
 
 const uppercaseWordsInArray = strings => {
@@ -38,7 +37,13 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  return strings
+    .toString()
+    .split('')
+    .reverse()
+    .join('')
+    .split(',')
+    .reverse();
 };
 
 const onlyEven = numbers => {
