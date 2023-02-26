@@ -4,7 +4,7 @@ const getNthElement = (index, array) => {
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.join();
 };
 
 const csvStringToArray = string => {
