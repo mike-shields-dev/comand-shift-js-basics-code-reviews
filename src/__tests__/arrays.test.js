@@ -46,7 +46,7 @@ describe('csvStringToArray', () => {
 });
 
 describe('addToArray', () => {
-  xit('adds the item to the end of the array', () => {
+  it('adds the item to the end of the array', () => {
     const array = [];
     const array2 = [1, 2, 3];
 
@@ -59,7 +59,7 @@ describe('addToArray', () => {
 });
 
 describe('addToArray2', () => {
-  xit('returns a new array with the value appended', () => {
+  it('returns a new array with the value appended', () => {
     const array = ['a', 'b', 'c'];
     const array2 = [1, 2, 3];
 
