@@ -16,8 +16,7 @@ const addToArray = (element, array) => {
 };
 
 const addToArray2 = (element, array) => {
-  const newArray = [...array, ...[element]];
-  console.log(newArray);
+  const newArray = [...array, element];
   return newArray;
 };
 
