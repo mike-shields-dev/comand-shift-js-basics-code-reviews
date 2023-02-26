@@ -53,7 +53,7 @@ function startsWith(char, string) {
 };
 
 function containsVowels(string) {
-  // your code here
+  return /[aeiou]/i.test(string);
 };
 
 function isLowerCase(string) {
