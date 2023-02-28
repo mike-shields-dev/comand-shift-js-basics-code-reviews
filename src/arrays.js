@@ -47,15 +47,15 @@ const reverseWordsInArray = strings => {
 };
 
 const onlyEven = numbers => {
-  return numbers.filter(even);
   function even(n) {
     return !(n % 2);
   }
+  return numbers.filter(even);
 };
 
 const removeNthElement2 = (index, array) => {
-  let firstArray = array.slice(0, index);
-  let secondArray = array.slice((index + 1), array[-1]);
+  const firstArray = array.slice(0, index);
+  const secondArray = array.slice(index + 1, array[-1]);
   return firstArray.concat(secondArray);
 };
 
