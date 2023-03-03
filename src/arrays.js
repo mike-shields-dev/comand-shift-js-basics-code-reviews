@@ -60,7 +60,8 @@ const removeNthElement2 = (index, array) => {
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  const vowelWords = strings.filter(word => /^[aeiou]/i.test(word));
+  return vowelWords;
 };
 
 const removeSpaces = string => {
