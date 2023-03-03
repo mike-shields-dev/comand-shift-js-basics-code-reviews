@@ -73,7 +73,12 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  function comparingLastLetter(a, b) {
+    if (a.slice(-1) < b.slice(-1)) return -1;
+    if (a.slice(-1) > b.slice(-1)) return 1;
+    return 0;
+  }
+  return strings.sort(comparingLastLetter);
 };
 
 module.exports = {
