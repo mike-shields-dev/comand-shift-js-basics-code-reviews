@@ -36,7 +36,8 @@ const findByName = (name, people) => {
 };
 
 const findHondas = cars => {
-  // your code here
+  const findHonda = cars.filter(car => car.manufacturer === 'Honda');
+  return findHonda;
 };
 
 const averageAge = people => {
