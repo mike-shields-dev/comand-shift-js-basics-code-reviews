@@ -41,7 +41,12 @@ const findHondas = cars => {
 };
 
 const averageAge = people => {
-  // your code here
+  const ages = [];
+  for (let i = 0; i < people.length; i++) {
+    ages.push(people[i].age);
+  }
+  const totalAge = ages.reduce((acc, curr) => acc + curr, 0);
+  return totalAge / people.length;
 };
 
 const createTalkingPerson = (name, age) => {
