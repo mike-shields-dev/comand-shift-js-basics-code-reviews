@@ -31,7 +31,8 @@ const getAges = people => {
 };
 
 const findByName = (name, people) => {
-  // your code here
+  const foundName = people.find(person => person.name === name);
+  return foundName;
 };
 
 const findHondas = cars => {
