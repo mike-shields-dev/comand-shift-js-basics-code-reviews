@@ -15,7 +15,7 @@ const getProperty = (property, object) => {
 };
 
 const hasProperty = (property, object) => {
-  // your code here
+  return object.hasOwnProperty(property);
 };
 
 const isOver65 = person => {
