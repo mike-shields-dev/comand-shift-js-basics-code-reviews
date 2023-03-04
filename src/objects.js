@@ -23,7 +23,11 @@ const isOver65 = person => {
 };
 
 const getAges = people => {
-  // your code here
+  const ages = [];
+  for (let i = 0; i < people.length; i++) {
+    ages.push(people[i].age);
+  }
+  return ages;
 };
 
 const findByName = (name, people) => {
