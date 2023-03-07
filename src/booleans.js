@@ -1,64 +1,32 @@
-function negate(a) {
-  return !a;
-};
+const negate = a => !a;
 
-function both(a, b) {
-  return a && b;
-};
+const both = (a, b) => a && b;
 
-function either(a, b) {
-  return a || b;
-};
+const either = (a, b) => a || b;
 
-function none(a, b) {
-  return !(a || b);
-};
+const none = (a, b) => !a && !b;
 
-function one(a, b) {
-  return (a || b) && !(a && b);
-};
+const one = (a, b) => !!(!a - !b);
 
-function truthiness(a) {
-  return Boolean(a);
-};
+const truthiness = a => !!a;
 
-function isEqual(a, b) {
-  return a === b;
-};
+const isEqual = (a, b) => a === b;
 
-function isGreaterThan(a, b) {
-  return a > b;
-};
+const isGreaterThan = (a, b) => a > b;
 
-function isLessThanOrEqualTo(a, b) {
-  return a <= b;
-};
+const isLessThanOrEqualTo = (a, b) => a <= b;
 
-function isOdd(a) {
-  return Boolean(a % 2);
-};
+const isOdd = a => !!(a % 2);
 
-function isEven(a) {
-  return !(Boolean(a % 2));
-};
+const isEven = a => !(a % 2);
 
-function isSquare(a) {
-  const squareRoot = Math.sqrt(a);
-  const isPerfectSquare = Math.ceil(squareRoot) === Math.floor(squareRoot);
-  return isPerfectSquare;
-};
+const isSquare = a => Number.isInteger(Math.sqrt(a));
 
-function startsWith(char, string) {
-  return string.startsWith(char);
-};
+const startsWith = (char, string) => string.startsWith(char);
 
-function containsVowels(string) {
-  return /[aeiou]/i.test(string);
-};
+const containsVowels = string => /[aeiou]/i.test(string);
 
-function isLowerCase(string) {
-  return string === string.toLowerCase();
-};
+const isLowerCase = string => string === string.toLowerCase();
 
 module.exports = {
   negate,
